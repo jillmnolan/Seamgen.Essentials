@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<popup:PopupPage
+    xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Seamgen.Essentials.Forms.AlertPopUp"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    CloseWhenBackgroundIsClicked="False"
+    >
+    <popup:PopupPage.Content
+        >
+        <Grid
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="356"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="285"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Frame
+                Grid.Column="1"
+                Grid.Row="1"
+                BorderColor="Transparent"
+                HasShadow="True"
+                CornerRadius="5"
+                Padding="0"
+                >
+                <StackLayout
+                    IsClippedToBounds="True"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Spacing="0"
+                    >
+                    <StackLayout
+                        Padding="24, 0"
+                        Orientation="Horizontal"
+                        >
+                        <Image
+                            d:Source="alert"
+                            Source="{Binding IconImageSource}"
+                            />
+                        <Label
+                            d:Text="Lorem Ipsum"
+                            Text="{Binding Title}"
+                            FontSize="22"
+                            FontAttributes="Bold"
+                            TextColor="#121c32"
+                            VerticalTextAlignment="Center"
+                            />
+                    </StackLayout>
+                    <Label
+                        Padding="24,13,24,32"
+                        d:Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                        Text="{Binding AlertMessage}"
+                        x:Name="DcNumberLabel"
+                        FontSize="16"
+                        TextColor="#45484e"
+                        />
+                    <StackLayout
+                        VerticalOptions="End"
+                        HorizontalOptions="End"
+                        Orientation="Horizontal"
+                        Padding="0,0,24,24"
+                        >
+                        <Button
+                            d:Text="Ok"
+                            Text="{Binding OkButtonText}"
+                            TextColor="#7b8998"
+                            BackgroundColor="Transparent"
+                            Command="{Binding OkButtonCommand}"
+                            BorderColor="Transparent"
+                            >
+                        </Button>
+                        <Button
+                            d:Text="Cancel"
+                            Text="{Binding CancelButtonText}"
+                            TextColor="#288dc0"
+                            BackgroundColor="Transparent"
+                            Command="{Binding CancelButtonCommand}"
+                            BorderColor="Transparent"
+                            >
+                        </Button>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </popup:PopupPage.Content>
+</popup:PopupPage>
