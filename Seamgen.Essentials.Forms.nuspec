@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>Seamgen.Essentials.Forms</id>
+        <version>1.0.0-beta.1</version>
+        <authors>Michael Henke</authors>
+        <owners>Seamgen, LLC</owners>
+        <license type="expression">MIT</license>
+        <projectUrl>https://github.com/seamgen/Seamgen.Essentials/</projectUrl>
+        <icon>icon.png</icon>
+        <iconUrl>https://image.ibb.co/dqUMQR/WS1_icon.png</iconUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>This repository contains the source code to some essential packagaes used for development with Xamarin and Xamarin.Forms</description>
+        <releaseNotes>Beta release, use at your own risk</releaseNotes>
+        <copyright>Copyright 2020</copyright>
+        <tags>seamgen, xamarin, xamarin.forms, essentials</tags>
+        <!-- Insert within the <metadata> element -->
+        <dependencies>
+            <group targetFramework=".NETStandard2.0">
+                <dependency id="Seamgen.Essentials" 
+                    version="1.0.0-beta.1" />
+            </group>
+            <group>
+                <!--Common dependencies go here-->
+                <dependency id="Xamarin.Forms" 
+                    version="4.7.0.1080" />
+                <dependency id="Rg.Plugins.Popup" 
+                    version="2.0.0.3" />
+                <dependency id="Seamgen.Essentials" 
+                    version="1.0.0-beta.1" />
+            </group>
+            <group targetFramework="MonoAndroid403">
+                <!--MonoAndroid dependencies go here-->
+                <dependency id="Xamarin.Forms" 
+                    version="4.7.0.1080" />
+                <dependency id="Rg.Plugins.Popup" 
+                    version="2.0.0.3" />
+                <dependency id="Seamgen.Essentials" 
+                    version="1.0.0-beta.1" />
+            </group>
+            <group targetFramework="Xamarin.iOS10">
+                <!--Xamarin.iOS10 dependencies go here-->
+                <dependency id="Xamarin.Forms" 
+                    version="4.7.0.1080" />
+                <dependency id="Rg.Plugins.Popup" 
+                    version="2.0.0.3" />
+                <dependency id="Seamgen.Essentials" 
+                    version="1.0.0-beta.1" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="icon.png" 
+            target="" />
+        <!-- Cross-platform reference assemblies -->
+        <file src="Forms/bin/Release/netstandard2.0/Seamgen.Essentials.Forms.dll" 
+            target="lib\netstandard2.0" />
+        <file src="Forms/bin/Release/netstandard2.0/Seamgen.Essentials.Forms.xml" 
+            target="lib\netstandard2.0" />
+        <file src="LICENSE" 
+            target="lib\netstandard2.0" />
+        <!-- iOS reference assemblies -->
+        <file src="Forms/bin/Release/netstandard2.0/Seamgen.Essentials.Forms.dll" 
+            target="lib\Xamarin.iOS10" />
+        <file src="Forms/bin/Release/netstandard2.0/Seamgen.Essentials.Forms.xml" 
+            target="lib\Xamarin.iOS10" />
+        <file src="LICENSE" 
+            target="lib\Xamarin.iOS10" />
+        <!-- Android reference assemblies -->
+        <file src="Forms/bin/Release/netstandard2.0/Seamgen.Essentials.Forms.dll" 
+            target="lib\MonoAndroid403" />
+        <file src="Forms/bin/Release/netstandard2.0/Seamgen.Essentials.Forms.xml" 
+            target="lib\MonoAndroid403" />
+        <file src="LICENSE" 
+            target="lib\MonoAndroid403" />
+    </files>
+</package>
