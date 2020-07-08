@@ -2,13 +2,13 @@
 <package>
     <metadata>
         <id>Seamgen.Essentials.EventToCommandBehavior</id>
-        <version>1.0.0-beta.1</version>
+        <version>1.0.0-beta.2</version>
         <authors>Michael Henke</authors>
         <owners>Seamgen, LLC</owners>
         <license type="expression">MIT</license>
         <projectUrl>https://github.com/seamgen/Seamgen.Essentials/</projectUrl>
         <icon>icon.png</icon>
-        <iconUrl>https://image.ibb.co/dqUMQR/WS1_icon.png</iconUrl>
+        <iconUrl>https://github.com/seamgen/Seamgen.Essentials/blob/main/icon.png?raw=true</iconUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <description>This repository contains the source code to some essential packagaes used for development with Xamarin and Xamarin.Forms</description>
         <releaseNotes>Beta release, use at your own risk</releaseNotes>
