@@ -2,7 +2,7 @@
 <package>
     <metadata>
         <id>Seamgen.Essentials.Converters</id>
-        <version>1.0.0-beta.2</version>
+        <version>1.0.0-beta.8</version>
         <authors>Michael Henke</authors>
         <owners>Seamgen, LLC</owners>
         <license type="expression">MIT</license>
@@ -21,7 +21,7 @@
                 <dependency id="Xamarin.Forms" 
                     version="4.7.0.1080" />
             </group>
-            <group targetFramework="MonoAndroid403">
+            <group targetFramework="MonoAndroid50">
                 <!--MonoAndroid dependencies go here-->
                 <dependency id="Xamarin.Forms" 
                     version="4.7.0.1080" />
@@ -41,8 +41,6 @@
             target="lib\netstandard2.0" />
         <file src="Converters/bin/Release/netstandard2.0/Seamgen.Essentials.Converters.xml" 
             target="lib\netstandard2.0" />
-        <file src="LICENSE" 
-            target="lib\netstandard2.0" />
         <file src="icon.png" 
             target="lib\netstandard2.0" />
         <!-- iOS reference assemblies -->
@@ -50,18 +48,10 @@
             target="lib\Xamarin.iOS10" />
         <file src="Converters/bin/Release/netstandard2.0/Seamgen.Essentials.Converters.xml" 
             target="lib\Xamarin.iOS10" />
-        <file src="LICENSE" 
-            target="lib\Xamarin.iOS10" />
-        <file src="icon.png" 
-            target="lib\Xamarin.iOS10" />
         <!-- Android reference assemblies -->
         <file src="Converters/bin/Release/netstandard2.0/Seamgen.Essentials.Converters.dll" 
-            target="lib\MonoAndroid403" />
+            target="lib\MonoAndroid50" />
         <file src="Converters/bin/Release/netstandard2.0/Seamgen.Essentials.Converters.xml" 
-            target="lib\MonoAndroid403" />
-        <file src="LICENSE" 
-            target="lib\MonoAndroid403" />
-        <file src="icon.png" 
-            target="lib\MonoAndroid403" />
+            target="lib\MonoAndroid50" />
     </files>
 </package>

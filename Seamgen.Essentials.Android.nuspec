@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <metadata>
-        <id>Seamgen.Essentials</id>
+        <id>Seamgen.Essentials.Android</id>
         <version>1.0.0-beta.8</version>
         <authors>Michael Henke</authors>
         <owners>Seamgen, LLC</owners>
@@ -14,20 +14,21 @@
         <releaseNotes>Beta release, use at your own risk</releaseNotes>
         <copyright>Copyright 2020</copyright>
         <tags>seamgen, xamarin, xamarin.forms, essentials</tags>
-        <!-- Insert within the <metadata> element -->
         <dependencies>
-            <group targetFramework=".NETStandard2.0" />
+            <group targetFramework="monoandroid50">
+                <dependency id="Seamgen.Essentials" 
+                    version="1.0.0-beta.8" />
+                <dependency id="Xamarin.Android.Support.v7.AppCompat" 
+                    version="28.0.0.3" />
+            </group>
         </dependencies>
     </metadata>
     <files>
         <file src="icon.png" 
             target="" />
-        <!-- Cross-platform reference assemblies -->
-        <file src="Essentials/bin/Release/netstandard2.0/Seamgen.Essentials.dll" 
-            target="lib\netstandard2.0" />
-        <file src="Essentials/bin/Release/netstandard2.0/Seamgen.Essentials.xml" 
-            target="lib\netstandard2.0" />
-        <file src="LICENSE" 
-            target="lib\netstandard2.0" />
+        <file src="Android/bin/Release/Seamgen.Essentials.Android.dll" 
+            target="lib\monoandroid50" />
+        <file src="Android/bin/Release/Seamgen.Essentials.Android.xml" 
+            target="lib\monoandroid50" />
     </files>
 </package>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <metadata>
-        <id>Seamgen.Essentials</id>
+        <id>Seamgen.Essentials.iOS</id>
         <version>1.0.0-beta.8</version>
         <authors>Michael Henke</authors>
         <owners>Seamgen, LLC</owners>
@@ -13,21 +13,20 @@
         <description>This repository contains the source code to some essential packagaes used for development with Xamarin and Xamarin.Forms</description>
         <releaseNotes>Beta release, use at your own risk</releaseNotes>
         <copyright>Copyright 2020</copyright>
-        <tags>seamgen, xamarin, xamarin.forms, essentials</tags>
-        <!-- Insert within the <metadata> element -->
+        <tags>seamgen, xamarin, xamarin.forms, essentials, iOS</tags>
         <dependencies>
-            <group targetFramework=".NETStandard2.0" />
+            <group targetFramework="Xamarin.iOS10">
+                <dependency id="Seamgen.Essentials" 
+                    version="1.0.0-beta.8" />
+            </group>
         </dependencies>
     </metadata>
     <files>
         <file src="icon.png" 
             target="" />
-        <!-- Cross-platform reference assemblies -->
-        <file src="Essentials/bin/Release/netstandard2.0/Seamgen.Essentials.dll" 
-            target="lib\netstandard2.0" />
-        <file src="Essentials/bin/Release/netstandard2.0/Seamgen.Essentials.xml" 
-            target="lib\netstandard2.0" />
-        <file src="LICENSE" 
-            target="lib\netstandard2.0" />
+        <file src="iOS/bin/Release/Seamgen.Essentials.iOS.dll" 
+            target="lib\Xamarin.iOS10" />
+        <file src="iOS/bin/Release/Seamgen.Essentials.iOS.xml" 
+            target="lib\Xamarin.iOS10" />
     </files>
 </package>
