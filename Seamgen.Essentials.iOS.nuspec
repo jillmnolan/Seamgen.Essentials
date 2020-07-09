@@ -2,22 +2,22 @@
 <package>
     <metadata>
         <id>Seamgen.Essentials.iOS</id>
-        <version>1.0.0-beta.8</version>
+        <version>1.0.0-rc.1</version>
         <authors>Michael Henke</authors>
         <owners>Seamgen, LLC</owners>
         <license type="expression">MIT</license>
-        <projectUrl>https://github.com/seamgen/Seamgen.Essentials/</projectUrl>
+        <projectUrl>https://github.com/seamgen/Seamgen.Essentials/tree/main/iOS</projectUrl>
         <icon>icon.png</icon>
         <iconUrl>https://github.com/seamgen/Seamgen.Essentials/blob/main/icon.png?raw=true</iconUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <description>This repository contains the source code to some essential packagaes used for development with Xamarin and Xamarin.Forms</description>
+        <description>This repository contains the source code to some essential classes used for development with Xamarin and Xamarin.Forms</description>
         <releaseNotes>Beta release, use at your own risk</releaseNotes>
         <copyright>Copyright 2020</copyright>
         <tags>seamgen, xamarin, xamarin.forms, essentials, iOS</tags>
         <dependencies>
             <group targetFramework="Xamarin.iOS10">
                 <dependency id="Seamgen.Essentials" 
-                    version="1.0.0-beta.8" />
+                    version="1.0.0-rc.1" />
             </group>
         </dependencies>
     </metadata>

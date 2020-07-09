@@ -1,6 +1,6 @@
 # Seamgen Xamarin Forms Essentials
 
-This repository contains the source code to some essential packagaes used for development with Xamarin and Xamarin.Forms
+This repository contains the source code to some essential classes used for development with Xamarin and Xamarin.Forms
 
 - Seamgen.Essentials
 - Seamgen.Essentials.Forms
