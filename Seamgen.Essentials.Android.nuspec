@@ -2,22 +2,22 @@
 <package>
     <metadata>
         <id>Seamgen.Essentials.Android</id>
-        <version>1.0.0-beta.8</version>
+        <version>1.0.0-rc.1</version>
         <authors>Michael Henke</authors>
         <owners>Seamgen, LLC</owners>
         <license type="expression">MIT</license>
-        <projectUrl>https://github.com/seamgen/Seamgen.Essentials/</projectUrl>
+        <projectUrl>https://github.com/seamgen/Seamgen.Essentials/tree/main/Android</projectUrl>
         <icon>icon.png</icon>
         <iconUrl>https://github.com/seamgen/Seamgen.Essentials/blob/main/icon.png?raw=true</iconUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <description>This repository contains the source code to some essential packagaes used for development with Xamarin and Xamarin.Forms</description>
+        <description>This package contains some essential classes usefull for development with Xamarin and Xamarin.Forms. Please see the project documentation for details.</description>
         <releaseNotes>Beta release, use at your own risk</releaseNotes>
         <copyright>Copyright 2020</copyright>
         <tags>seamgen, xamarin, xamarin.forms, essentials</tags>
         <dependencies>
             <group targetFramework="monoandroid50">
                 <dependency id="Seamgen.Essentials" 
-                    version="1.0.0-beta.8" />
+                    version="1.0.0-rc.1" />
                 <dependency id="Xamarin.Android.Support.v7.AppCompat" 
                     version="28.0.0.3" />
             </group>
