@@ -3,8 +3,14 @@ using System.Net;
 
 namespace Seamgen.Essentials.Android
 {
+    /// <summary>
+    /// Get the currently registered proxy information
+    /// </summary>
     public class ProxyService : IProxyService
     {
+        /// <summary>
+        /// Proxy
+        /// </summary>
         public IWebProxy Proxy => GetAndroidWebProxy();
 
         WebProxy GetAndroidWebProxy()

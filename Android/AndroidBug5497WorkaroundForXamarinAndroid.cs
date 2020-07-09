@@ -6,6 +6,9 @@ using Android.Widget;
 
 namespace Seamgen.Essentials.Android
 {
+    /// <summary>
+    /// See: https://code.google.com/p/android/issues/detail?id=5497
+    /// </summary>
     public class AndroidBug5497WorkaroundForXamarinAndroid
     {
         // For more information, see https://code.google.com/p/android/issues/detail?id=5497
@@ -13,6 +16,10 @@ namespace Seamgen.Essentials.Android
 
         // CREDIT TO Joseph Johnson (http://stackoverflow.com/users/341631/joseph-johnson) for publishing the original Android solution on stackoverflow.com
 
+        /// <summary>
+        /// Assist Activity
+        /// </summary>
+        /// <param name="activity"></param>
         public static void assistActivity(Activity activity)
         {
             new AndroidBug5497WorkaroundForXamarinAndroid(activity);
